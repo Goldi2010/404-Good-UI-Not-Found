@@ -1,0 +1,44 @@
+.page-back-icon-wrapper,
+.page-back-icon {
+
+  height: 3dvh;
+  filter: brightness(5);
+
+}
+
+.page-back-icon-wrapper {
+
+  position: absolute;
+  top: 2dvh;
+  left: 5dvw;
+
+}
+
+@media (width > 600px) {
+
+  .page-back-icon-wrapper,
+  .page-back-icon {
+
+    height: 5dvw;
+
+  }
+
+  .page-back-icon-wrapper {
+    
+    top: 5dvh;
+    left: 3dvw;
+
+  }
+
+}
+
+@media (width > 1200px) {
+
+  .page-back-icon-wrapper,
+  .page-back-icon {
+
+    height: 3dvw;
+
+  }
+
+}

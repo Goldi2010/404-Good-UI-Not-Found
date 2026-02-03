@@ -1,0 +1,53 @@
+h1 {
+
+  display: inline-block;
+  padding: 15dvw 5dvw 5dvw 5dvw;
+  margin: 0;
+  
+  background: var(--linear-color-gradient);
+  background-clip: text;
+  color: transparent;
+
+}
+
+.image-raphael-goldberger {
+
+  position: relative;
+  bottom: calc(20dvw - 1em);
+  right: 10dvw;
+
+  float: right;
+  height: 20dvw;
+
+}
+
+.impressum-points-list {
+
+  padding: 5dvw;
+  margin: 0;
+
+}
+
+.impressum-point {
+
+  list-style: none;
+  padding: 0;
+  margin: 2dvh 0;
+
+}
+
+.impressum-point-title {
+
+  display: inline;
+  text-decoration: underline;
+
+}
+
+.impressum-point-data {
+
+  display: inline;
+  text-wrap: wrap;
+  max-width: 40dvw;
+  word-break: break-word;
+
+}

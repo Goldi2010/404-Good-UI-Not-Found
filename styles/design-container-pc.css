@@ -1,0 +1,48 @@
+@media (width > 600px) {
+  
+  .design-containers a {
+
+    flex: 0 0 20dvw;
+
+  }
+
+  .design-container {
+
+    font-size: 4dvw;
+    border-radius: 3dvh;
+
+  }
+
+}
+
+@media (width > 1100px) {
+
+  .design-containers a {
+
+    flex: 0 0 10dvw;
+
+  }
+
+  .design-container {
+
+    font-size: 3dvw;
+
+  }
+
+}
+
+@media (width > 1650px) {
+
+  .design-containers a {
+
+    flex: 0 0 5dvw;
+
+  }
+
+  .design-container {
+
+    font-size: 2dvw;
+
+  }
+
+}

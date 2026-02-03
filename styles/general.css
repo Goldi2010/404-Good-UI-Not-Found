@@ -1,0 +1,54 @@
+:root {
+
+    --color-1: #393E41;
+    --color-2: #F2E2D2;
+    --color-3: #F64740;
+    --color-4: #D000FF;
+    --color-5: #00D9C0;
+    --linear-color-gradient: linear-gradient(90deg,var(--color-5) 10%, var(--color-4) 50%, var(--color-3) 90%);
+
+}
+
+body {
+    
+    position: relative;
+
+    box-sizing: border-box;
+    min-height: 100dvh;
+    padding: 0;
+    margin: 0;
+
+    background-color: var(--color-1);
+    font-family: Quicksand, Arial;
+    font-size: 5dvw;
+
+    color: var(--color-2);
+
+}
+
+button {
+
+  cursor: pointer;
+
+}
+
+a {
+
+  color: var(--color-2);
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+a:hover {
+
+  text-decoration: underline;
+
+}
+
+a:visited {
+
+    color: var(--color-2);
+    text-decoration: none;
+
+}

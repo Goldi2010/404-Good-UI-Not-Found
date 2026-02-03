@@ -1,0 +1,56 @@
+.login-form {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2dvw;
+
+  margin-bottom: 2dvh;
+
+}
+
+.login-input-field,
+.send-button {
+
+  border: none;
+  border-radius: 999px;
+  font-size: 5dvw;
+  padding: 2dvw 3dvw;
+
+  color: var(--color-1);
+
+}
+
+.login-input-field {
+
+  width: 50dvw;
+  padding-right: 10dvw;
+
+}
+
+.login-input-field:focus {
+
+  border: none;
+  outline: none;
+
+}
+
+.send-button {
+
+  background-color: var(--color-3);
+  color: var(--color-2);
+  transition: filter 0.1s;
+
+}
+
+.send-button:hover {
+
+  filter: brightness(0.9);
+
+}
+
+.send-button:active {
+
+  filter: brightness(0.8)
+
+}

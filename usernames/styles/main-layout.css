@@ -1,0 +1,18 @@
+body {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+main {
+
+  position: relative;
+  bottom: 7dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}

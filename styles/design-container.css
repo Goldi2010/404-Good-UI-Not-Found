@@ -1,0 +1,148 @@
+@property --angle {
+
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+
+}
+
+.carousel {
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  overflow-x: clip;
+  overflow-y: visible;
+
+  margin-bottom: 5dvh;
+
+}
+
+.carousel::-webkit-scrollbar {
+
+  display: none;
+
+}
+
+.carousel:has(.design-containers:hover) .design-containers {
+
+  animation-play-state: paused;
+
+}
+
+.design-containers {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10dvw;
+
+  padding-left: 10dvw;
+
+  animation: spin 10s infinite linear;
+
+}
+
+.design-containers a {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  flex: 0 0 50dvw;
+  margin: 5dvh 0;
+
+  text-decoration: none;
+
+}
+
+.design-container {
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: inherit;
+  height: inherit;
+  padding: 3dvh 5dvw;
+
+  background-color: var(--color-1);
+
+  border-radius: 5dvw;
+
+  font-size: 6dvw;
+  text-align: center;
+  text-wrap: nowrap;
+
+}
+
+.design-container:hover {
+
+  text-decoration: 0.1dvw underline;
+
+  cursor: pointer;
+
+}
+
+.design-container::before,
+.design-container::after {
+
+  content: "";
+  
+  position: absolute;
+  z-index: -1;
+  
+  width: 100%;
+  height: 100%;
+  padding: 0.5%;
+  
+  border-radius: inherit;
+  
+  background: conic-gradient(from var(--angle), var(--color-3), var(--color-4), var(--color-5), var(--color-4), var(--color-3));
+
+  animation: background-shadow-animation 2s infinite linear;
+  animation-play-state: paused;
+
+}
+
+.design-container::after {
+
+  padding: 2%;
+  filter: blur(3dvw);
+
+}
+
+.design-container.hovered::before,
+.design-container.hovered::after {
+
+  animation-play-state: running;
+
+}
+
+@keyframes background-shadow-animation {
+
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
+
+}
+
+@keyframes spin {
+
+  from {
+    translate: 0%;
+  }
+
+  to {
+    translate: -100%;
+  }
+
+}

@@ -1,0 +1,37 @@
+body {
+
+    padding-top: 17dvh;
+    
+}
+
+header {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 13dvh;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 2dvh 5dvw;
+
+    background-color: var(--color-1);
+
+}
+
+h1 {
+
+    display: inline-block;
+
+    background: var(--linear-color-gradient);
+    background-clip: text;
+    color: transparent;
+
+    font-size: 7.5dvw;
+    text-align: center;
+
+}

@@ -1,0 +1,36 @@
+@media (width > 600px) {
+
+  .login-input-field,
+  .send-button {
+
+    font-size: 4dvh;
+
+  }
+
+  .login-input-field {
+
+    width: min(50dvh, 50dvw);
+
+  }
+
+  .page-back-icon {
+
+    top: 5dvh;
+    left: 3dvw;
+    height: 5dvw;
+
+  }
+
+}
+
+@media (width > 1200px) {
+
+  .page-back-icon {
+
+    top: 5dvh;
+    left: 3dvw;
+    height: 3dvw;
+
+  }
+
+}
